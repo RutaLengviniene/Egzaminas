@@ -14,30 +14,36 @@
     --pink: #FF3998;
 }
 html {
-    /*background-color: var(--light-2);*/
+    width: 100vw;
+    margin: 0;
+    padding: 0;
     font-family: 'Inter', sans-serif;
 }
 body {
-    width: 100%;
-    /*height: 3300px;*/
-    border-radius: 1rem;
+    max-width: 100%;
+    margin-left: 80px;
+    margin-right: 80px;
     background-color: var(--light-1);
-    margin: auto;
+    align-items: center;
+    overflow-x: hidden;
 }
 header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: auto;
-    padding-top: 3rem;
-    margin: 4.5rem;
-    height: 2.25rem;
-    width: 90%;
+    padding-top: 48px;
+    height: 36px;
+    width: 100%;
+}
+header img {
+    width: 12%;
+}
+.navigatio-bar {
+    width: 100%;
 }
 .top-navigation a {
     text-decoration: none;
     color: var(--dark-2);
-    padding: 0.5rem;
+    padding: 8px;
 }
 .top-navigation a:last-of-type{
     color: var(--pink);
@@ -46,98 +52,90 @@ header {
     color: var(--pink);
 }
 .section-1 {
-    /*width: 80rem;*/
-    height: 30rem;
-    padding-top: 4rem;
-    margin-left: 5rem;
-    margin-bottom: 6.25rem;
+    width: 100%;
+    height: fit-content;
+    padding-top: 64px;
+    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .hero {
     width: 50%;
-    height: 35rem;
+    height: fit-content;
     text-align: center;
     margin: auto;
 }
 .hero img {
-    position: relative;
     width: 100%;
     height: 100%;
 }
 .text {
     width: 50%;
-    padding-top: 5rem;
+    padding-top: 80px;
 }
 small {
     text-transform: uppercase;
     color: var(--pink);
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 16px;
 }
 h1 {
     font-weight: 800;
-    font-size: 6rem;
+    font-size: 96px;
     margin: 0;
 }
 h2 {
     font-weight: 800;
-    font-size: 3.5rem;
-    margin-top: 1.25rem;
+    font-size: 56px;
+    margin-top: 20px;
 }
 h3 {
-    font-size: 2.5rem;
+    font-size: 40px;
     font-weight: 500;
     margin: 0%;
 }
 p {
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 20px;
     color: var(--dark-2);
 }
 button {
-    width: 11.75rem;
-    height: 3.75rem;
-    font-size: 1.25rem;
+    width: 170px;
+    height: 70px;
+    background: none;
+    border-radius: 35px;
+    border: double 4px transparent;
+    background-image: linear-gradient(white, white), linear-gradient(90deg, #FF3998, #FF8139);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    font-size: 18px;
     font-weight: 600;
-    margin-top: 1.25rem;
-    border: 0.2rem solid transparent;
-    border-image: url("file:///C:/Users/rutal/OneDrive/Stalinis%20kompiuteris/CodeAcademy/Egzaminas/assets/assets/background.svg") 20 round;
-    background-color: var(--light-1);
-}
-.button {
-    width: 11.75rem;
-    height: 3.75rem;
-    border-radius: 16px;
-    border: 0.2rem solid transparent;
-}
+  }
 .section-2 {
-    width: 80ram;
-    height: 10rem;
-    padding: 7.5rem 1.25rem 0 1.25rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    border-radius: 1rem;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    padding: 120px 20px 0 20px;
+    border-radius: 16px;
     color: var(--dark-1);
     background-image: url(file:///C:/Users/rutal/OneDrive/Stalinis%20kompiuteris/CodeAcademy/Egzaminas/assets/assets/background.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .section-press {
-    width: 90%;
-    height: 3rem;
+    width: 100%;
+    height: 48px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     overflow: hidden;
     justify-content: space-between;
-    margin-left: 5rem;
-    margin-top: 6.25rem;
+    margin-top: 100px;
 }
 .section-3 {
-    width: 90%;
-    height: 35rem;
+    width: 100%;
+    height: 560px;
 }
 .section-3 a {
     color: var(--dark-2);
@@ -146,86 +144,85 @@ button {
     color: var(--pink);
 }
 .text-showcase {
-    margin-top: 6.25rem;
-    margin-left: 5rem;
+    margin-top: 100px;
 }
 .text-showcase p span {
     text-decoration: underline;
 }
 .auction {
-    margin-left: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .gloop-series {
-    margin-top: 3rem;
+    margin-top: 48px;
     display: flex;
     flex-direction: column;
-    width: 18rem;
-    height: 25rem;
+    width: 288px;
+    height: 400px;
     background-color: var(--light-2);
-    border-radius: 1rem;
+    border-radius: 16px;
 }
 table {
-    margin-top: 0.6rem;
+    margin-top: 10px;
 }
 td img {
-    height: 1.37rem;
-    width: 0.8rem;
+    height: 22px;
+    width: 13px;
 }
 td:nth-child(even) {
     text-align: right;
 }
 tr:nth-child(1) td:nth-child(1) {
     color: var(--orange);
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: 500;
 }
 tr:nth-child(1) td:nth-child(2) {
     color: var(--dark-3);
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: 500;
 }
 tr:nth-child(2) {
     color: var(--dark-1);
-    font-size: 1.25rem;
+    font-size: 12px;
     font-weight: 500;
 }
 tr:nth-child(3) {
     color: var(--dark-3);
-    font-size: 1.12rem;
+    font-size: 20px;
     font-weight: 400;
 }
 td {
-    padding: 0.35rem;
+    padding: 6px;
 }
 .img {
-    width: 18rem;
-    height: 17.35rem;
+    width: 288px;
+    height: 278px;
 }
 
 .section-4 {
-    width: 90%;
-    height: 35rem;
-    padding-top: 7.65rem;
+    width: 100%;
+    height: 560px;
+    padding-top: 122px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 6.25rem;
-    margin-left: 5rem;
-    border-top: 0.15rem solid var(--light-2);
-    border-bottom: 0.15rem solid var(--light-2);
+    margin-top: 100px;
+    border-top: 3px solid var(--light-2);
+    border-bottom: 3px solid var(--light-2);
 }
 header img {
-    width: 12rem;
-    height: 2.25rem;
+    width: 192px;
+    height: 36px;
+}
+.burger-menu {
+    display: none;
 }
 .footer-top {
-    width: 90%;
-    height: 25rem;
-    margin-left: 5rem;
-    padding-top: 7.65rem;
+    width: 100%;
+    height: fit-content;
+    padding-top: 122px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -237,19 +234,19 @@ header img {
 .left-side a {
     text-decoration: none;
     color: var(--dark-4);
-    padding: 0.5rem;
+    padding: 8px;
 }
 ul li:first-of-type {
-    padding-bottom: 1.25rem;
+    padding-bottom: 20px;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 16px;
     color: var(--dark-2)
 }
 ul li {
-    padding: 0.65rem;
+    padding: 10px;
     list-style: none;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 16px;
     color: var(--dark-2)
 }
 li a {
@@ -260,45 +257,75 @@ li a:hover {
     color: var(--pink);
 }
 .footer-bottom {
-    width: 90%;
-    margin-left: 5rem;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     color: var(--dark-4);
 }
 /*Mobile version*/
-@media screen and (max-width: 450px) {
+@media screen and (min-width: 360px) and (max-width: 450px) {
+    body {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .top-navigation {
         display: none;
     }
+    .burger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 32px;
+        height: 32px;
+    }
+    .burger-menu div {
+        width: 32px;
+        height: 2px;
+        background-color: var(--dark-4);
+    }
     .section-1 {
-        height: 60rem;
+        height: 960px;
+        margin-bottom: 50px;
     }
     h1 {
-        font-size: 4rem;
+        font-size: 45px;
+        overflow: hidden;
     }
     p {
         display: flex;
-        inline-size: 23rem;
+        inline-size: 368px;
         font-size: large;
         overflow: hidden;
     }
     h2 {
         display: flex;
-        inline-size: 23rem;
+        inline-size: 368px;
         font-size: large;
         overflow: hidden;
     }
+    .hero img {
+        position: relative;
+    }
+    .text {
+        display: flex;
+        flex-wrap: wrap;
+        overflow: ;
+    }
     .section-press {
-        height: 6rem;
+        height: 96px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        padding: 1.5ram;
+        padding: 24px;
     }
     .footer-top {
         display: grid;
+    }
+    .right-side{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
     .footer-bottom {
         overflow: hidden;
